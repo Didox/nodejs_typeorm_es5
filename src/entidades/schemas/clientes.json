@@ -1,0 +1,22 @@
+{ 
+  "name": "clientes", 
+  "columns": { 
+     "id": { 
+        "primary": true, 
+        "type": "int", 
+        "generated": true 
+     }, 
+     "nome": { 
+        "type": "varchar" 
+     }, 
+     "cpf": { 
+        "type": "varchar" 
+     },  
+     "telefone": { 
+        "type": "varchar" 
+     },  
+     "email": { 
+        "type": "varchar" 
+     }
+  } 
+}
