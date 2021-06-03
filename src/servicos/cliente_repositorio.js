@@ -4,8 +4,9 @@ module.exports = {
   inserir: async cliente => {
     const connection = await typeorm.open();
     const clienteRepositorio =  await connection.getRepository("clientes");
-    await clienteRepositorio.save(cliente)
+    let obj = await clienteRepositorio.save(cliente)
     await connection.close()
+    return obj;
   },
   atualizar: async (id,cliente) => {
     const connection = await typeorm.open();
